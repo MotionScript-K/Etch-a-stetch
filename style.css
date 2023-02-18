@@ -1,0 +1,35 @@
+:root{
+    --point: 10;
+    --targetColor:  red;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-rows: 40px auto;
+    align-items: center;
+    justify-content: center;
+}
+.btnS{
+    position: relative;
+    justify-self: center;
+    margin: 0;
+    width:60px;
+    height: 30px;
+}
+.box{
+    position: relative;
+    margin: 0;
+    width: 400px;
+    height: 400px;
+    border: 3px solid rgb(130, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(var(--point), 1fr);
+    grid-template-rows: repeat(var(--point), 1fr);
+}
+.targetObj{
+    position: relative;
+    border-radius: 1rem;
+    background-color: var(--targetColor);
+}
